@@ -1,0 +1,43 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--app-font);
+    border-radius: 1rem;
+    padding: .6rem;
+    margin: 2rem auto 2rem auto;
+}
+
+
+.input {
+    font-size: 1.4rem;
+   border: none;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    color: var(--app-font);
+    background-color:var(--app-color);
+}
+
+.input:focus {
+    outline: none;
+    /* box-shadow: 0 0 3px 0 grey;
+    border-color: grey;
+    border-radius: 1rem; */
+}
+
+.button {
+    font-size: 1.6rem;
+    padding-top: .2rem;
+    margin-left: .6rem;
+    color: var(--app-color);
+    background-color: var(--app-font);
+    border: 1px solid var(--app-font);
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.button:hover {
+    background-color: var(--app-color);
+    color: var(--app-font);
+}

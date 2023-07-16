@@ -1,0 +1,10 @@
+#node modules
+
+node_modules/
+
+#api key 
+
+.env
+
+# eslint cache
+.eslintcache

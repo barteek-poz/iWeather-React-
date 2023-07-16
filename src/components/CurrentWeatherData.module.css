@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+}
+.location-icon {
+    font-size: 1.8rem;
+    margin-right: .4rem;
+}
+.current-weather-icon {
+    font-size: 12rem;
+    margin-bottom: -2rem;
+}
+
+.current-weather-temp {
+    font-size: 2.8rem;
+}
+
+.current-weather-code {
+    font-size: 1.6rem;
+    margin: 1.2rem;
+}
+.current-weather-others {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    margin-right: 1.4rem;
+}
+
+.future-weather-section {
+    display: flex;
+    gap: 1.6rem;
+    flex-grow: 0;
+}
