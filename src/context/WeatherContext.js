@@ -27,7 +27,7 @@ export const WeatherContextProvider = (props) => {
       try {
         const fetchWeather = async () => {
           const response = await fetch(
-            `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=4&aqi=no&alerts=no`
+            `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=4&aqi=no&alerts=no`
           );
           const fetchWeatherData = await response.json();
           if (response.ok) {
