@@ -4,6 +4,8 @@ iWeather is a fully responsive weather forecast app, build in React with use of 
 
 Check out live version: https://venerable-khapse-b096b3.netlify.app/
 
+Update - 29.07.2023 - Unfortunetly, WeatherAPI link broke, and it generates forecast for next 2, not 3 days. App is still working, but with actual weather data, and forecast for next 2 days. I will try to fix it, when WeatherAPI will repair their API calls. 
+
 ## Starting page
 
 After runing the app, you will see search bar. You just need to type location for which you want to check weather forecast (this app is using only english language, so type your locations in english e.g. "Warsaw", "New York", "Rome").
