@@ -53,10 +53,16 @@ const CurrentWeatherData = () => {
         </p>
       </div>
       <section className={styles["future-weather-section"]}>
+<<<<<<< HEAD
         <FutureWeatherData weatherData={ctx.forecastData.day1} />
         <FutureWeatherData weatherData={ctx.forecastData.day2} />
         {/* Problems with API for third day */}
         {/* <FutureWeatherData weatherData = {ctx.forecastData.day3}/> */}
+=======
+        <FutureWeatherData weatherData = {ctx.forecastData.day1}/>
+        <FutureWeatherData weatherData = {ctx.forecastData.day2}/>
+        // <FutureWeatherData weatherData = {ctx.forecastData.day3}/>
+>>>>>>> 8439246f7fbdeac3ac9526070a68ed84ff188dde
       </section>
     </section>
   );
