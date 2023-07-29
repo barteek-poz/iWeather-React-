@@ -27,9 +27,10 @@ export const WeatherContextProvider = (props) => {
       try {
         const fetchWeather = async () => {
           const response = await fetch(
-            `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=4&aqi=no&alerts=no`
+            `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=4&aqi=no&alerts=no`
           );
           const fetchWeatherData = await response.json();
+          
           if (response.ok) {
             setFetchComplete(true);
             setCurrWeatherData({
@@ -45,6 +46,7 @@ export const WeatherContextProvider = (props) => {
             setFetchComplete(false);
             setError("We couldn't find your location. Please try again");
           }
+          
         };
         fetchWeather();
       } catch (error) {

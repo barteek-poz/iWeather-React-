@@ -12,19 +12,24 @@ const CurrentWeatherData = () => {
   const isDay = ctx.currWeatherData.currWeather.is_day;
   const iconCode = ctx.currWeatherData.currWeather.condition.code;
   const weatherIcon = useIcon(iconCode, isDay);
-  
-  
-  useEffect(()=>{
-    if(isDay) {
-      document.documentElement.style.setProperty('--background-color', '#1770af')
-      document.documentElement.style.setProperty('--app-color', '#e1e8f0')
-      document.documentElement.style.setProperty('--app-font', 'black')
-   } else {
-    document.documentElement.style.setProperty('--background-color', '#272c37')
-    document.documentElement.style.setProperty('--app-color', '#5a5f6a')
-      document.documentElement.style.setProperty('--app-font', 'white')
-   }
-  },[isDay])
+
+  useEffect(() => {
+    if (isDay) {
+      document.documentElement.style.setProperty(
+        "--background-color",
+        "#1770af"
+      );
+      document.documentElement.style.setProperty("--app-color", "#e1e8f0");
+      document.documentElement.style.setProperty("--app-font", "black");
+    } else {
+      document.documentElement.style.setProperty(
+        "--background-color",
+        "#272c37"
+      );
+      document.documentElement.style.setProperty("--app-color", "#5a5f6a");
+      document.documentElement.style.setProperty("--app-font", "white");
+    }
+  }, [isDay]);
 
   return (
     <section className={styles.wrapper}>
@@ -48,9 +53,10 @@ const CurrentWeatherData = () => {
         </p>
       </div>
       <section className={styles["future-weather-section"]}>
-        <FutureWeatherData weatherData = {ctx.forecastData.day1}/>
-        <FutureWeatherData weatherData = {ctx.forecastData.day2}/>
-        <FutureWeatherData weatherData = {ctx.forecastData.day3}/>
+        <FutureWeatherData weatherData={ctx.forecastData.day1} />
+        <FutureWeatherData weatherData={ctx.forecastData.day2} />
+        {/* Problems with API for third day */}
+        {/* <FutureWeatherData weatherData = {ctx.forecastData.day3}/> */}
       </section>
     </section>
   );
