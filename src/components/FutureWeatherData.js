@@ -5,7 +5,7 @@ import styles from "./FutureWeatherData.module.css";
 const FutureWeatherData = (props) => {
 
   const dayName = new Date(props.weatherData.date).toLocaleDateString("en-us", {
-    weekday: "long",
+    weekday: "short",
   });
   const weatherIcon = useIcon(props.weatherData.day.condition.code, 1);
   const temp = props.weatherData.day.avgtemp_c.toFixed(0);
