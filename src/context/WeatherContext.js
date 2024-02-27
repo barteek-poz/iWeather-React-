@@ -38,9 +38,9 @@ export const WeatherContextProvider = (props) => {
               currWeather: fetchWeatherData.current,
             });
             setForecastData({
-              day1: fetchWeatherData.forecast.forecastday[1],
-              day2: fetchWeatherData.forecast.forecastday[2],
-              day3: fetchWeatherData.forecast.forecastday[3],
+              day1: fetchWeatherData.forecast.forecastday[0],
+              day2: fetchWeatherData.forecast.forecastday[1],
+              day3: fetchWeatherData.forecast.forecastday[2],
             });
           } else {
             setFetchComplete(false);
